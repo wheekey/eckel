@@ -7,8 +7,13 @@ class Connection {
     // Allow creation via static method:
     static Connection makeConnection() {
         count++;
+
+
         return new Connection();
     }
+
+
+
     public static int howMany() { return count; }
     public String toString() {
         return ("Connection " + count);
